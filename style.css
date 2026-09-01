@@ -130,13 +130,14 @@ img { display: block; max-width: 100%; }
 
 .hero-3m-label {
   display: block; font-family: 'Montserrat', sans-serif; font-weight: 700;
-  letter-spacing: .25em; text-transform: uppercase;
-  font-size: .82rem; color: rgba(255,255,255,.65);
-  margin-bottom: 4px;
+  letter-spacing: .2em; text-transform: uppercase;
+  font-size: 1.15rem; color: rgba(255,255,255,.75);
+  line-height: 1; margin-bottom: 6px;
 }
 .hero-3m-big {
-  height: 110px; width: auto;
+  height: 100px; width: auto;
   filter: drop-shadow(0 4px 16px rgba(0,0,0,.5));
+  display: block; margin-top: 0;
 }
 
 .hero-city {
@@ -222,7 +223,7 @@ img { display: block; max-width: 100%; }
   border-bottom: 2px solid var(--blue);
 }
 .trust-inner {
-  display: grid; grid-template-columns: repeat(4, 1fr);
+  display: grid; grid-template-columns: repeat(3, 1fr);
   gap: 0;
 }
 .trust-item {
@@ -258,7 +259,14 @@ img { display: block; max-width: 100%; }
 
 .hero-selo3m-wrap { margin-bottom: 26px; }
 
-.footer-selo3m { margin-top: 18px; }
+.footer-selo3m { margin: 16px 0 20px; }
+.footer-3m-label {
+  display: block; font-family: 'Montserrat', sans-serif; font-weight: 700;
+  letter-spacing: .2em; text-transform: uppercase;
+  font-size: .68rem; color: rgba(255,255,255,.55);
+  margin-bottom: 2px;
+}
+.footer-3m-big { height: 62px; width: auto; }
 
 /* ============================================================
    SOBRE
@@ -739,10 +747,6 @@ img { display: block; max-width: 100%; }
 @media (max-width: 900px) {
   .dep-grid { grid-template-columns: 1fr; }
 
-  .trust-inner { grid-template-columns: repeat(2, 1fr); }
-  .trust-item { border-bottom: 1px solid rgba(255,255,255,.08); }
-  .trust-item:nth-child(2), .trust-item:nth-child(4) { border-right: none; }
-
   .sobre-wrap { grid-template-columns: 1fr; gap: 40px; }
   .galeria-slider { height: 300px; }
 
@@ -770,14 +774,15 @@ img { display: block; max-width: 100%; }
    RESPONSIVE MOBILE
    ============================================================ */
 @media (max-width: 600px) {
-  .trust-inner { grid-template-columns: 1fr 1fr; }
-  .trust-item { padding: 16px 10px; gap: 8px; }
+  .trust-inner { grid-template-columns: 1fr; }
+  .trust-item { padding: 16px 10px; gap: 8px; border-right: none !important; border-bottom: 1px solid rgba(255,255,255,.08); }
+  .trust-item:last-child { border-bottom: none; }
   .trust-ico { font-size: 1.3rem; }
   .trust-num { font-size: .95rem; }
   .trust-label { font-size: .64rem; }
 
   .hero-body { padding: 60px 20px 80px; }
-  .hero-3m-big { height: 78px; }
+  .hero-3m-big { height: 74px; }
   .hero-h1 { font-size: 1.5rem; }
   .btn-hero-wpp { width: 100%; justify-content: center; padding: 14px 20px; }
 
