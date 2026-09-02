@@ -739,6 +739,10 @@ img { display: block; max-width: 100%; }
   .nav-link:hover { color: var(--green); background: none; }
   .btn-header-wpp { display: none; }
   .hamburger { display: flex; }
+
+  .header-inner { justify-content: center; position: relative; }
+  .logo { position: absolute; left: 50%; transform: translateX(-50%); }
+  .hamburger { position: absolute; right: 0; }
 }
 
 /* ============================================================
