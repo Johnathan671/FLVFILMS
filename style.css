@@ -107,7 +107,7 @@ img { display: block; max-width: 100%; }
 
 .hero-bg-img {
   position: absolute; inset: 0;
-  width: 100%; height: 100%; object-fit: cover; object-position: center;
+  width: 100%; height: 100%; object-fit: cover; object-position: center 15%;
   z-index: 0;
 }
 
@@ -135,7 +135,7 @@ img { display: block; max-width: 100%; }
   line-height: 1; margin-bottom: 6px;
 }
 .hero-3m-big {
-  height: 100px; width: auto;
+  height: 78px; width: auto;
   filter: drop-shadow(0 4px 16px rgba(0,0,0,.5));
   display: block; margin-top: 0;
 }
@@ -784,7 +784,7 @@ img { display: block; max-width: 100%; }
   .trust-label { font-size: .64rem; }
 
   .hero-body { padding: 60px 20px 80px; }
-  .hero-3m-big { height: 74px; }
+  .hero-3m-big { height: 60px; }
   .hero-h1 { font-size: 1.5rem; }
   .btn-hero-wpp { width: 100%; justify-content: center; padding: 14px 20px; }
 
