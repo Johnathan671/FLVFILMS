@@ -107,7 +107,7 @@ img { display: block; max-width: 100%; }
 
 .hero-bg-img {
   position: absolute; inset: 0;
-  width: 100%; height: 100%; object-fit: cover; object-position: center 15%;
+  width: 100%; height: 100%; object-fit: cover; object-position: center 30%;
   z-index: 0;
 }
 
@@ -341,7 +341,7 @@ img { display: block; max-width: 100%; }
   color: var(--blue); line-height: 1.25; margin-bottom: 22px;
 }
 .sobre-content p {
-  font-size: .93rem; color: var(--muted); line-height: 1.78; margin-bottom: 13px;
+  font-size: 1.02rem; font-weight: 600; color: var(--muted); line-height: 1.78; margin-bottom: 13px;
 }
 .sobre-content p strong { color: var(--text); }
 .sobre-content p:last-of-type { margin-bottom: 28px; }
@@ -398,14 +398,14 @@ img { display: block; max-width: 100%; }
 
 .srv-info h3 {
   font-family: 'Oswald', sans-serif; font-weight: 700; text-transform: uppercase;
-  font-size: 1rem; color: var(--blue);
+  font-size: 1.08rem; color: var(--blue);
   letter-spacing: .04em; margin-bottom: 9px;
 }
-.srv-sub { font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: .88rem; color: var(--text); margin-bottom: 5px; }
-.srv-local { font-size: .8rem; color: var(--muted); margin-bottom: 18px; }
+.srv-sub { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: .98rem; color: var(--text); margin-bottom: 5px; }
+.srv-local { font-size: .88rem; font-weight: 600; color: var(--muted); margin-bottom: 18px; }
 
 .srv-lista { display: flex; flex-direction: column; gap: 10px; margin-bottom: 26px; }
-.srv-lista li { display: flex; align-items: flex-start; gap: 10px; font-size: .9rem; color: var(--text); line-height: 1.5; }
+.srv-lista li { display: flex; align-items: flex-start; gap: 10px; font-size: .98rem; font-weight: 600; color: var(--text); line-height: 1.5; }
 .ck { color: var(--green); font-size: 1rem; font-weight: 900; flex-shrink: 0; margin-top: 1px; }
 
 /* ============================================================
@@ -439,9 +439,9 @@ img { display: block; max-width: 100%; }
 .dif-icon { font-size: 2.4rem; margin-bottom: 14px; }
 .dif-card h4 {
   font-family: 'Montserrat', sans-serif; font-weight: 700;
-  font-size: .95rem; color: var(--blue); margin-bottom: 9px;
+  font-size: 1.02rem; color: var(--blue); margin-bottom: 9px;
 }
-.dif-card p { font-size: .85rem; color: var(--muted); line-height: 1.65; }
+.dif-card p { font-size: .93rem; font-weight: 600; color: var(--muted); line-height: 1.65; }
 
 /* ============================================================
    GALERIA DE FOTOS
@@ -451,7 +451,7 @@ img { display: block; max-width: 100%; }
 
 .fotos-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 240px 240px;
   gap: 10px;
 }
@@ -496,7 +496,7 @@ img { display: block; max-width: 100%; }
   font-size: clamp(1.4rem, 3vw, 2rem); color: #fff;
   text-align: center; margin-bottom: 10px; letter-spacing: .04em;
 }
-.marcas-sub { text-align: center; color: rgba(255,255,255,.45); font-size: .92rem; margin-bottom: 44px; }
+.marcas-sub { text-align: center; color: rgba(255,255,255,.55); font-size: 1.02rem; font-weight: 700; margin-bottom: 44px; }
 
 .marcas-slider-wrap { position: relative; margin-bottom: 40px; }
 .marcas-slider {
@@ -522,6 +522,14 @@ img { display: block; max-width: 100%; }
   transition: color var(--transition), border-color var(--transition);
 }
 .marca-chip:hover { color: #fff; border-color: var(--blue); }
+
+.marca-icon-item {
+  display: flex; align-items: center; justify-content: center;
+  height: 64px; width: 100%;
+  opacity: .8; transition: opacity var(--transition), transform var(--transition);
+}
+.marca-icon-item:hover { opacity: 1; transform: translateY(-3px); }
+.marca-icon-item svg { max-width: 100%; height: auto; }
 
 /* ============================================================
    AVALIAR
@@ -587,7 +595,7 @@ img { display: block; max-width: 100%; }
 .dep-card:hover { box-shadow: 0 12px 40px rgba(0,0,0,.1); transform: translateY(-4px); }
 .dep-stars { color: #f5b400; font-size: 1rem; letter-spacing: 2px; margin-bottom: 14px; }
 .dep-quote {
-  font-family: 'Montserrat', sans-serif; font-size: .9rem; color: var(--text);
+  font-family: 'Montserrat', sans-serif; font-size: 1rem; font-weight: 700; color: var(--text);
   line-height: 1.7; font-style: italic; margin-bottom: 22px; flex-grow: 1;
 }
 .dep-autor { display: flex; align-items: center; gap: 12px; }
@@ -647,10 +655,10 @@ img { display: block; max-width: 100%; }
   font-family: 'Oswald', sans-serif; font-weight: 700; text-transform: uppercase;
   font-size: clamp(1.4rem, 3vw, 2rem); margin-bottom: 12px;
 }
-.cta-esq > p { font-size: .93rem; color: rgba(255,255,255,.6); margin-bottom: 28px; line-height: 1.7; }
+.cta-esq > p { font-size: 1.02rem; font-weight: 600; color: rgba(255,255,255,.7); margin-bottom: 28px; line-height: 1.7; }
 
 .cta-info-list { display: flex; flex-direction: column; gap: 14px; }
-.cta-info-item { display: flex; align-items: flex-start; gap: 12px; font-size: .9rem; color: rgba(255,255,255,.75); }
+.cta-info-item { display: flex; align-items: flex-start; gap: 12px; font-size: .98rem; font-weight: 600; color: rgba(255,255,255,.85); }
 .cta-info-item span:first-child { font-size: 1.1rem; flex-shrink: 0; }
 
 .cta-dir { display: flex; flex-direction: column; gap: 14px; }
@@ -674,7 +682,7 @@ img { display: block; max-width: 100%; }
 .footer-logo-img {
   height: 54px; width: auto; object-fit: contain;
 }
-.footer-desc { font-size: .85rem; color: rgba(255,255,255,.4); line-height: 1.7; max-width: 260px; }
+.footer-desc { font-size: .95rem; font-weight: 600; color: rgba(255,255,255,.55); line-height: 1.7; max-width: 260px; }
 
 .footer h4 {
   font-family: 'Montserrat', sans-serif; font-weight: 700;
@@ -682,9 +690,9 @@ img { display: block; max-width: 100%; }
   color: rgba(255,255,255,.35); margin-bottom: 16px;
 }
 .footer-nav { display: flex; flex-direction: column; gap: 10px; }
-.footer-nav a { font-size: .88rem; color: rgba(255,255,255,.6); transition: color var(--transition); }
+.footer-nav a { font-size: .98rem; font-weight: 600; color: rgba(255,255,255,.7); transition: color var(--transition); }
 .footer-nav a:hover { color: var(--blue); }
-.footer p { font-size: .85rem; color: rgba(255,255,255,.5); line-height: 1.65; }
+.footer p { font-size: .95rem; font-weight: 600; color: rgba(255,255,255,.6); line-height: 1.65; }
 
 .footer-wpp-btn { margin-top: 16px; padding: 10px 18px; font-size: .78rem; }
 
@@ -787,7 +795,8 @@ img { display: block; max-width: 100%; }
   .hero-3m-big { height: 60px; }
   .hero-3m-label { font-size: .68rem; letter-spacing: .12em; }
   .hero-h1 { font-size: 1.5rem; }
-  .btn-hero-wpp { width: 100%; justify-content: center; padding: 14px 20px; }
+  .btn-hero-wpp { width: 100%; justify-content: center; padding: 11px 16px; font-size: .78rem; gap: 8px; }
+  .btn-hero-wpp svg { width: 18px; height: 18px; }
 
   .marcas-list { gap: 10px; }
 
