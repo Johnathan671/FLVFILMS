@@ -141,7 +141,7 @@ img { display: block; max-width: 100%; }
   line-height: 1; margin-bottom: 6px;
 }
 .hero-3m-big {
-  height: 130px; width: auto;
+  height: 150px; width: auto;
   filter: drop-shadow(0 4px 14px rgba(0,0,0,.6));
   display: block; margin-top: 0;
 }
@@ -794,7 +794,7 @@ img { display: block; max-width: 100%; }
   .hero-body { padding: 30px 20px 70px; }
   .hero-desktop-only { display: none; }
   .hero-mobile-only { display: block; }
-  .hero-3m-big { height: 74px; }
+  .hero-3m-big { height: 88px; }
   .btn-hero-wpp { width: 100%; justify-content: center; padding: 11px 16px; font-size: .78rem; gap: 8px; margin-top: 58vh; }
   .btn-hero-wpp svg { width: 18px; height: 18px; }
 
