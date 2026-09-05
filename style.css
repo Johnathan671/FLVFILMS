@@ -796,7 +796,7 @@ img { display: block; max-width: 100%; }
   .hero-mobile-only { display: block; }
   .hero-3m-big { height: 38px; }
   .hero-3m-label { font-size: .68rem; letter-spacing: .12em; }
-  .btn-hero-wpp { width: 100%; justify-content: center; padding: 11px 16px; font-size: .78rem; gap: 8px; }
+  .btn-hero-wpp { width: 100%; justify-content: center; padding: 11px 16px; font-size: .78rem; gap: 8px; margin-top: 34vh; }
   .btn-hero-wpp svg { width: 18px; height: 18px; }
 
   .galeria-slider { height: 240px; }
@@ -809,6 +809,7 @@ img { display: block; max-width: 100%; }
 
   .fotos-grid { grid-template-columns: 1fr 1fr; }
   .foto-item--wide { grid-column: span 2; }
+  .fotos-grid .foto-item:nth-child(5) { display: none; }
 
   .footer-grid { grid-template-columns: 1fr; }
   .footer-brand { grid-column: auto !important; text-align: center; }
