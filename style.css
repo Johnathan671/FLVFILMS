@@ -794,7 +794,7 @@ img { display: block; max-width: 100%; }
   .hero-desktop-only { display: none; }
   .hero-mobile-only { display: block; }
   .hero-3m-big { height: 88px; }
-  .hero-selo3m-wrap { margin-top: 30vh; }
+  .hero-selo3m-wrap { margin-top: 30vh; margin-left: -20px; }
   .btn-hero-wpp { width: 100%; justify-content: center; padding: 11px 16px; font-size: .78rem; gap: 8px; margin-top: 28vh; }
   .btn-hero-wpp svg { width: 18px; height: 18px; }
 
