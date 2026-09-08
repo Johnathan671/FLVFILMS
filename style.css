@@ -384,10 +384,8 @@ img { display: block; max-width: 100%; }
 .srv-row:hover { box-shadow: 0 10px 40px rgba(0,0,0,.15); transform: translateY(-3px); }
 .srv-row:last-child { margin-bottom: 0; }
 
-.srv-row--alt { flex-direction: row-reverse; }
-.srv-row--alt.srv-row { display: flex; }
-.srv-row--alt .srv-fotos,
-.srv-row--alt .srv-info { flex: 1; }
+.srv-row--alt .srv-fotos { order: 2; }
+.srv-row--alt .srv-info { order: 1; }
 
 /* FOTOS */
 .srv-fotos { display: flex; min-height: 320px; overflow: hidden; }
