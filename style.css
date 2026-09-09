@@ -790,7 +790,7 @@ img { display: block; max-width: 100%; }
   .trust-label { font-size: .64rem; }
 
   .hero { align-items: flex-start; }
-  .hero-body { padding: 30px 20px 70px; }
+  .hero-body { padding: 30px 20px 70px; margin: 0; width: 100%; }
   .hero-desktop-only { display: none; }
   .hero-mobile-only { display: block; }
   .hero-3m-big { height: 88px; }
