@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
     dot.addEventListener('click', function () { goTo(i); resetAuto(); });
   });
 
-  if (slides.length) startAuto();
+  if (slides.length > 1) startAuto();
 
   /* 7. BOTÃO FLUTUANTE */
   const wppFloat = document.getElementById('wppFloat');
