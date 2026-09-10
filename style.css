@@ -798,6 +798,8 @@ img { display: block; max-width: 100%; }
   .btn-hero-wpp { width: 100%; justify-content: center; padding: 11px 16px; font-size: .78rem; gap: 8px; margin-top: 28vh; }
   .btn-hero-wpp svg { width: 18px; height: 18px; }
 
+  .btn-green { white-space: normal; text-align: center; width: 100%; font-size: .78rem; letter-spacing: .05em; padding: 13px 18px; }
+
   .galeria-slider { height: 240px; }
 
   .servicos { padding: 60px 0; }
