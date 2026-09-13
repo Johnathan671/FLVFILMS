@@ -109,23 +109,25 @@ img { display: block; max-width: 100%; }
   position: absolute; inset: 0;
   width: 100%; height: 100%; object-fit: cover; object-position: center 30%;
   z-index: 0;
+  filter: brightness(1.18);
 }
 
 .hero-overlay {
   position: absolute; inset: 0; z-index: 1;
   background: linear-gradient(
     100deg,
-    rgba(0,0,0,.88) 0%,
-    rgba(0,0,0,.72) 40%,
-    rgba(0,0,0,.35) 70%,
-    rgba(0,0,0,.15) 100%
+    rgba(0,0,0,.68) 0%,
+    rgba(0,0,0,.52) 40%,
+    rgba(0,0,0,.26) 70%,
+    rgba(0,0,0,.08) 100%
   );
 }
 
 .hero-body {
   position: relative; z-index: 2;
-  padding: 80px 24px 100px;
-  max-width: 680px;
+  margin: 0;
+  padding: 80px 24px 100px 64px;
+  max-width: 740px;
 }
 
 .sr-only {
@@ -388,13 +390,12 @@ img { display: block; max-width: 100%; }
 .srv-row--alt .srv-info { order: 1; }
 
 /* FOTOS */
-.srv-fotos { display: flex; min-height: 320px; overflow: hidden; }
+.srv-fotos { display: flex; height: 460px; overflow: hidden; }
 .srv-fotos--duo { display: grid; grid-template-columns: 1fr 1fr; }
 .srv-foto-half { display: flex; overflow: hidden; }
 
 .srv-img {
   width: 100%; height: 100%; object-fit: cover;
-  min-height: 320px;
   transition: transform .5s ease;
 }
 .srv-row:hover .srv-img { transform: scale(1.04); }
@@ -461,26 +462,19 @@ img { display: block; max-width: 100%; }
 .fotos-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 240px 240px;
   gap: 10px;
 }
 
 .foto-item {
   position: relative; overflow: hidden; border-radius: 8px;
   background: #222;
+  aspect-ratio: 3 / 4;
 }
 .foto-item img {
   width: 100%; height: 100%; object-fit: cover;
   transition: transform .5s ease;
 }
 .foto-item:hover img { transform: scale(1.07); }
-
-.foto-item--tall {
-  grid-row: span 2;
-}
-.foto-item--wide {
-  grid-column: span 2;
-}
 
 /* ============================================================
    MARCAS ATENDIDAS (carrossel + grid de marcas)
@@ -762,15 +756,12 @@ img { display: block; max-width: 100%; }
   .srv-row--alt .srv-fotos { order: 1; }
   .srv-row--alt .srv-info { order: 2; }
   .srv-fotos--duo { grid-template-columns: 1fr 1fr; }
-  .srv-img { min-height: 240px; }
+  .srv-fotos { height: 240px; }
   .srv-info { padding: 28px 24px; }
 
   .fotos-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
   }
-  .foto-item--tall { grid-row: span 1; }
-  .foto-item--wide { grid-column: span 2; }
 
   .cta-wrap { grid-template-columns: 1fr; gap: 40px; }
 
@@ -798,17 +789,17 @@ img { display: block; max-width: 100%; }
   .btn-hero-wpp { width: 100%; justify-content: center; padding: 11px 16px; font-size: .78rem; gap: 8px; margin-top: 28vh; }
   .btn-hero-wpp svg { width: 18px; height: 18px; }
 
+  .btn-green { white-space: normal; text-align: center; width: 100%; font-size: .78rem; letter-spacing: .05em; padding: 13px 18px; }
+
   .galeria-slider { height: 240px; }
 
   .servicos { padding: 60px 0; }
   .srv-fotos--duo { grid-template-columns: 1fr; }
-  .srv-img { min-height: 200px; }
+  .srv-fotos { height: 200px; }
 
   .dif-grid { grid-template-columns: 1fr; }
 
-  .fotos-grid { grid-template-columns: 1fr 1fr; }
-  .foto-item--wide { grid-column: span 2; }
-  .fotos-grid .foto-item:nth-child(5) { display: none; }
+  .fotos-grid { grid-template-columns: 1fr; }
 
   .footer-grid { grid-template-columns: 1fr; }
   .footer-brand { grid-column: auto !important; text-align: center; }
