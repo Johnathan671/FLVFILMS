@@ -468,7 +468,7 @@ img { display: block; max-width: 100%; }
 .foto-item {
   position: relative; overflow: hidden; border-radius: 8px;
   background: #222;
-  aspect-ratio: 3 / 4;
+  height: 520px;
 }
 .foto-item img {
   width: 100%; height: 100%; object-fit: cover;
@@ -762,6 +762,7 @@ img { display: block; max-width: 100%; }
   .fotos-grid {
     grid-template-columns: repeat(3, 1fr);
   }
+  .foto-item { height: 340px; }
 
   .cta-wrap { grid-template-columns: 1fr; gap: 40px; }
 
@@ -800,6 +801,7 @@ img { display: block; max-width: 100%; }
   .dif-grid { grid-template-columns: 1fr; }
 
   .fotos-grid { grid-template-columns: 1fr; }
+  .foto-item { height: 320px; }
 
   .footer-grid { grid-template-columns: 1fr; }
   .footer-brand { grid-column: auto !important; text-align: center; }
