@@ -240,6 +240,10 @@ document.addEventListener('DOMContentLoaded', function () {
           'currency': 'BRL'
         });
 
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18434719067/5XuhCIHK5_YcENv6rdZE'
+        });
+
       }
 
     });

@@ -223,6 +223,28 @@ img { display: block; max-width: 100%; }
 }
 
 /* ============================================================
+   BTN INSTAGRAM
+   ============================================================ */
+.btn-insta {
+  display: inline-flex; align-items: center; gap: 9px;
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  color: #fff;
+  font-family: 'Montserrat', sans-serif; font-weight: 700;
+  font-size: .82rem; letter-spacing: .09em;
+  padding: 13px 26px; border-radius: var(--radius);
+  transition: transform var(--transition), box-shadow var(--transition), opacity var(--transition);
+  white-space: nowrap;
+}
+.btn-insta:hover {
+  opacity: .9; transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(220,39,67,.35);
+}
+
+.footer-social-row {
+  display: flex; flex-wrap: wrap; gap: 12px;
+}
+
+/* ============================================================
    TRUST BAR (selo 3M + avaliações + anos de mercado)
    ============================================================ */
 .trust-bar {
@@ -244,6 +266,7 @@ img { display: block; max-width: 100%; }
 .trust-item:last-child { border-right: none; }
 .trust-ico { flex-shrink: 0; line-height: 1; color: var(--blue-light); display: flex; }
 .trust-ico svg { width: 28px; height: 28px; }
+.trust-3m-logo { flex-shrink: 0; height: 30px; width: auto; object-fit: contain; }
 .trust-num {
   font-family: 'Oswald', sans-serif; font-weight: 700;
   font-size: 1.15rem; color: #fff; line-height: 1.1;
@@ -685,6 +708,7 @@ img { display: block; max-width: 100%; }
 .footer p { font-size: .95rem; font-weight: 600; color: rgba(255,255,255,.6); line-height: 1.65; }
 
 .footer-wpp-btn { margin-top: 16px; padding: 10px 18px; font-size: .78rem; }
+.footer-insta-btn { margin-top: 16px; padding: 10px 18px; font-size: .78rem; }
 
 .footer-bottom {
   border-top: 1px solid #1a1a1a;
@@ -778,6 +802,7 @@ img { display: block; max-width: 100%; }
   .trust-item { padding: 16px 10px; gap: 8px; border-right: none !important; border-bottom: 1px solid rgba(255,255,255,.08); }
   .trust-item:last-child { border-bottom: none; }
   .trust-ico svg { width: 22px; height: 22px; }
+  .trust-3m-logo { height: 24px; }
   .trust-num { font-size: .95rem; }
   .trust-label { font-size: .64rem; }
 
